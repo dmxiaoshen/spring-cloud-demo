@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config-client-dmxs
+server:
+  port: 7009
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://dmxs:123456@localhost:8000/eureka
+    register-with-eureka: false

@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: config-client-dmxs
+  cloud:
+    config:
+      # 用了配置中心的配置，就以配置中心的配置为准
+      uri: http://localhost:9000/
+      label: dev
