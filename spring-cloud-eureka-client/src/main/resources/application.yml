@@ -1,6 +1,8 @@
 spring:
   application:
     name: eureka-client-dmxs
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
 server:
   port: 9012
 eureka:
