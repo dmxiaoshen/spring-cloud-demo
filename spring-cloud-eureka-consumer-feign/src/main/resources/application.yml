@@ -1,8 +1,8 @@
 spring:
   application:
     name: eureka-consumer-feign
-#  jackson:
-#    date-format: yyyy-MM-dd HH:mm:ss
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
 server:
   port: 8003
 eureka:
