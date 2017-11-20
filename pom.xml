@@ -10,6 +10,7 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <modules>
+        <module>spring-cloud-common</module>
         <module>spring-cloud-demo-parent</module>
         <module>spring-cloud-eureka-server</module>
         <module>spring-cloud-eureka-client</module>
