@@ -4,17 +4,12 @@ import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.Date;
-
 /**
- * Created by hzhsg on 2017/11/8.
+ * Created by hzhsg on 2017/11/21.
  */
 @FeignClient("eureka-client-dmxs")
 public interface DcClient {
 
-    @GetMapping("/dc/description")
-    Object getDescription();
-
-    @GetMapping("/dc/param/date")
-    String testDateParam(@RequestParam("id")String id, @RequestParam("date")Date date);
+    @GetMapping("/dc/hystrix/test")
+    public String hystrixTest(@RequestParam("title")String title);
 }
