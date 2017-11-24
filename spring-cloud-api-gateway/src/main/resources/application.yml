@@ -1,0 +1,12 @@
+server:
+  port: 1001
+spring:
+  application:
+    name: spring-cloud-api-gateway
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://dmxs:123456@localhost:8000/eureka
+
