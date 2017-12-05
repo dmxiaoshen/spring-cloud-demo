@@ -22,6 +22,7 @@
         <module>spring-cloud-eureka-consumer-feign-hystrix</module>
         <module>spring-cloud-hystrix-dashboard</module>
         <module>spring-cloud-api-gateway</module>
+        <module>spring-cloud-date</module>
     </modules>
 
 </project>

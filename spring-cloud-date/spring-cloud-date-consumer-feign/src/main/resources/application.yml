@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-cloud-date-consumer-feign
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+server:
+  port: 9102
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://dmxs:123456@localhost:8000/eureka
