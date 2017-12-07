@@ -19,4 +19,5 @@
 
 ## 结论
 
-feign调用其实一样遵循Controller层postman调用，@RequestParam传参不受json日期格式影响，但是项目中
+feign调用其实一样遵循Controller层postman调用，@RequestParam传参不受json日期格式影响，但是项目中所有@RequestBody传参的json参数中的日期格式
+需要遵循相同的解析pattern，如yyyy-MM-dd HH:mm:ss
