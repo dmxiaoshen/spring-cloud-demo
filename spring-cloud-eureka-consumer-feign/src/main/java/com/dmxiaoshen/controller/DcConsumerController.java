@@ -27,4 +27,9 @@ public class DcConsumerController {
     public String getParamDate(){
         return dcClient.testDateParam("1", new Date());
     }
+
+    @GetMapping("/post/body")
+    public String postBody(){
+        return dcClient.testBody(null);
+    }
 }
