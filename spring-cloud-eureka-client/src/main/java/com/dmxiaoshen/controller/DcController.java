@@ -27,7 +27,12 @@ public class DcController {
         return Arrays.toString(discoveryClient.getServices().toArray());
     }
 
-    @GetMapping("/description")
+    /**
+     * url最后如果没有 /   则  /description 和 /descripton/ 都能访问
+     * url最后如果有  /   则  /description 访问404
+     * @return
+     */
+    @GetMapping("/description/")
     public Object getDescription(){
         Map<String,Object> maps = new HashMap<>();
         maps.put("description",discoveryClient.description());
